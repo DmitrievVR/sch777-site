@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заявка - Школа №777</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Заявка</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">О школе</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="application.html">Заявка</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="application">
+    <h2>Заполните форму для подачи заявки</h2>
+    <form action="https://formspree.io/f/mjvkwlnz" method="POST">
+      <label for="fio">ФИО:</label>
+      <input type="text" id="fio" name="fio" required><br><br>
+
+      <label for="address">Адрес:</label>
+      <input type="text" id="address" name="address" required><br><br>
+
+      <label for="cabinet">Номер кабинета:</label>
+      <input type="text" id="cabinet" name="cabinet" required><br><br>
+
+      <label for="date">Дата:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="problem">Описание проблемы:</label><br>
+      <textarea id="problem" name="problem" rows="4" cols="50" required></textarea><br><br>
+
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Школа №777</p>
+  </footer>
+
+</body>
+</html>
